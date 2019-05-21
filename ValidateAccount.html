@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập Validate Account</title>
+</head>
+<body>
+            <script>
+                let patt = /^[_a-z0-9]{6,}$/;
+                function isAnAccount(str) {
+                    return patt.test(str);
+                }
+                console.log(isAnAccount("123abc_"));
+                console.log(isAnAccount("1234_"));
+                console.log(isAnAccount("______"));
+                console.log(isAnAccount("abcde"));
+                console.log(isAnAccount("123_abc"));
+            </script>
+</body>
+</html>
